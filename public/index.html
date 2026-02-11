@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VINDICATUS — Apoio e proteção</title>
+  <meta name="description" content="Apoio para pessoas sob pressão psicológica, abusos e ameaças. Orientação, segurança e caminhos reais." />
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="top" id="top">
+    <a class="brand" href="#top" aria-label="Vindicatus">
+      <span class="brand__mark">V</span>
+      <span class="brand__text">
+        <span class="brand__name">VINDICATUS</span>
+        <span class="brand__tag">tudo está conectado</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação">
+      <a class="nav__link" href="#apoio">Apoio</a>
+      <a class="nav__link" href="#entender">Entender</a>
+      <a class="nav__link" href="#seguranca">Segurança</a>
+      <a class="nav__link" href="#expostos">Expostos</a>
+      <a class="nav__link" href="#recursos">Recursos</a>
+      <button class="btn btn--ghost" id="openContact" type="button">Falar com a equipe</button>
+    </nav>
+
+    <div class="top__actions">
+      <button class="btn btn--outline btn--sm" id="quickExit" type="button" title="Sai rapidamente para um site neutro">
+        Saída rápida
+      </button>
+      <button class="btn btn--ghost btn--sm" id="reduceMotion" type="button" aria-pressed="false">
+        Reduzir animações
+      </button>
+      <button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <aside class="mobile" id="mobile" aria-hidden="true">
+    <div class="mobile__panel">
+      <div class="mobile__head">
+        <span class="mono muted">MENU</span>
+        <button class="iconbtn" id="closeMobile" aria-label="Fechar menu" type="button">✕</button>
+      </div>
+      <a href="#apoio" class="mobile__link">Apoio</a>
+      <a href="#entender" class="mobile__link">Entender</a>
+      <a href="#seguranca" class="mobile__link">Segurança</a>
+      <a href="#expostos" class="mobile__link">Expostos</a>
+      <a href="#recursos" class="mobile__link">Recursos</a>
+      <button class="btn btn--primary" id="openContact2" type="button">Falar com a equipe</button>
+      <button class="btn btn--outline" id="quickExit2" type="button">Saída rápida</button>
+    </div>
+    <div class="mobile__backdrop" id="mobileBackdrop"></div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="pill mono">
+          <span class="dot"></span>
+          atendimento com respeito • orientação • segurança
+        </div>
+
+        <h1>
+          <span class="accent">Tudo está conectado.</span><br />
+          Vou usar isso para <b>expor</b>, <b>proteger</b> e buscar <b>responsabilização</b>.
+        </h1>
+
+        <p class="lead">
+          Se você está vivendo pressão psicológica, abuso emocional, perseguição, chantagem ou ameaças,
+          você não está sozinho(a). Aqui você encontra passos claros e caminhos reais de apoio.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#apoio">Preciso de ajuda agora</a>
+          <a class="btn btn--outline" href="#seguranca">Como me proteger</a>
+          <button class="btn btn--ghost" id="openContact3" type="button">Falar com a equipe</button>
+        </div>
+
+        <div class="notice" role="note">
+          <b>Se você está em perigo imediato:</b> procure ajuda local agora.
+          No Brasil: <b>190</b> (emergência) • <b>180</b> (Central de Atendimento à Mulher) • <b>188</b> (CVV).
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apoio">
+      <div class="section__head">
+        <h2>Apoio imediato</h2>
+        <p class="muted">Passos simples e seguros para o agora.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>1) Segurança primeiro</h3>
+          <p>Se houver risco, priorize sair do local e acionar ajuda.</p>
+          <ul class="list">
+            <li>Vá para um local com pessoas e iluminação.</li>
+            <li>Chame alguém de confiança.</li>
+            <li>Se necessário, acione emergência.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>2) Aterramento</h3>
+          <p>Quando o corpo entra em alerta, ele precisa de uma âncora.</p>
+          <ul class="list">
+            <li>Inspire 4s, segure 2s, solte 6s (3 vezes).</li>
+            <li>5 coisas que vê • 4 que toca • 3 que ouve • 2 que sente • 1 pensamento.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>3) Um passo concreto</h3>
+          <p>Escolha um passo pequeno que você consegue fazer hoje — isso já é movimento.</p>
+          <div class="chips mono">
+            <span>falar com alguém</span>
+            <span>registrar um relato</span>
+            <span>revisar senhas</span>
+            <span>buscar recurso local</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="entender">
+      <div class="section__head">
+        <h2>Entender o que está acontecendo</h2>
+        <p class="muted">Nomear o problema reduz o poder do silêncio.</p>
+      </div>
+
+      <div class="split">
+        <article class="card">
+          <h3>Pressão psicológica e abuso</h3>
+          <p>
+            Pode aparecer como manipulação, humilhação, isolamento, controle, chantagem, ameaça, perseguição
+            ou gaslighting.
+          </p>
+          <blockquote>
+            Você não precisa “provar” que está sofrendo para merecer cuidado.
+          </blockquote>
+        </article>
+
+        <article class="card">
+          <h3>Sinais comuns</h3>
+          <ul class="list">
+            <li>medo constante de “errar”</li>
+            <li>culpa excessiva e confusão</li>
+            <li>ameaças diretas ou veladas</li>
+            <li>controle de telefone, redes sociais, dinheiro</li>
+            <li>perseguição, invasão de privacidade, exposição</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="seguranca">
+      <div class="section__head">
+        <h2>Segurança e evidências</h2>
+        <p class="muted">Orientação prática — sem promessas irreais.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Proteção digital básica</h3>
+          <ul class="list">
+            <li>Troque senhas e ative 2FA.</li>
+            <li>Revise dispositivos conectados (email, WhatsApp, redes sociais).</li>
+            <li>Evite compartilhar localização sem necessidade.</li>
+            <li>Priorize segurança, não “ganhar discussão”.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Como registrar evidências</h3>
+          <ul class="list">
+            <li>Prints com contexto e data/hora.</li>
+            <li>Salve links, IDs de perfis, números, emails.</li>
+            <li>Diário simples: dia/hora • o que ocorreu • testemunhas.</li>
+            <li>Armazene em local seguro.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Plano de segurança</h3>
+          <ul class="list">
+            <li>Palavra-código com alguém de confiança.</li>
+            <li>Plano de saída e documentos essenciais.</li>
+            <li>Se necessário, ajuste rotas e horários temporariamente.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="expostos">
+      <div class="section__head">
+        <h2>Expostos</h2>
+        <p class="muted">
+          Publicações feitas com responsabilidade editorial e baseadas em evidências.
+          <span id="curatorLine"></span>
+        </p>
+      </div>
+
+      <div class="posts" id="posts"></div>
+      <div class="muted small" id="postsHint"></div>
+    </section>
+
+    <section class="section" id="recursos">
+      <div class="section__head">
+        <h2>Recursos</h2>
+        <p class="muted">Caminhos reais: apoio psicológico, jurídico e redes de proteção.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Brasil</h3>
+          <ul class="list">
+            <li><b>190</b> — emergência</li>
+            <li><b>180</b> — Central de Atendimento à Mulher</li>
+            <li><b>188</b> — CVV</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>O que fazemos aqui</h3>
+          <ul class="list">
+            <li>organizar seu relato com clareza</li>
+            <li>montar checklist de evidências</li>
+            <li>orientar passos de proteção digital</li>
+            <li>indicar caminhos de ajuda local</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Contato seguro</h3>
+          <p>Fale com a equipe por um canal privado de atendimento.</p>
+          <button class="btn btn--primary" id="openContact4" type="button">Falar com a equipe</button>
+          <p class="muted small">*Não substitui serviços de emergência.</p>
+        </article>
+      </div>
+
+      <div class="card">
+        <h3>Privacidade (resumo)</h3>
+        <ul class="list">
+          <li>Coletamos o mínimo necessário para te orientar.</li>
+          <li>Mensagens são entregues a um <b>canal privado de atendimento</b> por um provedor externo de mensageria.</li>
+          <li>Não vendemos dados e não exibimos publicamente suas mensagens.</li>
+          <li>Evite enviar senhas, códigos e documentos sensíveis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span class="mono muted">© <span id="year"></span> VINDICATUS</span>
+        <span class="mono">tudo está conectado</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal post -->
+  <section class="overlay" id="postModal" aria-hidden="true" role="dialog" aria-label="Postagem">
+    <div class="overlay__panel overlay__panel--wide" role="document">
+      <div class="overlay__head">
+        <div>
+          <div class="mono muted">EXPOSTOS</div>
+          <h3 id="modalTitle">—</h3>
+        </div>
+        <button class="iconbtn" id="closePost" aria-label="Fechar" type="button">✕</button>
+      </div>
+
+      <img class="cover" id="modalCover" alt="" />
+      <div class="muted small" id="modalDates"></div>
+
+      <div class="content" id="modalContent"></div>
+
+      <div class="gallery" id="modalGallery"></div>
+    </div>
+    <div class="overlay__backdrop" id="postBackdrop"></div>
+  </section>
+
+  <!-- Contact overlay -->
+  <section class="overlay" id="contact" aria-hidden="true" role="dialog" aria-label="Falar com a equipe">
+    <div class="overlay__panel" role="document">
+      <div class="overlay__head">
+        <div>
+          <div class="mono muted">CANAL</div>
+          <h3>Falar com a equipe</h3>
+        </div>
+        <button class="iconbtn" id="closeContact" aria-label="Fechar" type="button">✕</button>
+      </div>
+
+      <p class="muted">
+        Sua mensagem será enviada para um canal privado de atendimento.
+        Evite enviar informações sensíveis além do necessário.
+      </p>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label class="mono muted" for="name">NOME (OU APELIDO)</label>
+          <input id="name" name="name" type="text" placeholder="Como prefere ser chamado(a)?" />
+          <small class="err" id="errName"></small>
+        </div>
+
+        <div class="field">
+          <label class="mono muted" for="contactInfo">COMO TE RETORNAR</label>
+          <input id="contactInfo" name="contact" type="text" placeholder="WhatsApp, email, @, ou outro" />
+          <small class="muted small">Opcional, mas recomendado se você quer resposta.</small>
+        </div>
+
+        <div class="field">
+          <label class="mono muted" for="topic">TEMA</label>
+          <select id="topic" name="topic">
+            <option value="pressao_psicologica">Pressão psicológica</option>
+            <option value="abuso_emocional">Abuso emocional</option>
+            <option value="chantagem">Chantagem / ameaça</option>
+            <option value="perseguicao">Perseguição</option>
+            <option value="exposicao">Exposição / vazamento</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="mono muted" for="message">MENSAGEM</label>
+          <textarea id="message" name="message" rows="7" placeholder="Conte o que aconteceu (quando, onde, quem, sinais de risco)."></textarea>
+          <small class="err" id="errMessage"></small>
+        </div>
+
+        <div class="row">
+          <button class="btn btn--primary" type="submit" id="sendContact">Enviar</button>
+          <button class="btn btn--outline" id="preview" type="button">Prévia</button>
+        </div>
+
+        <pre class="packet mono" id="packet"></pre>
+        <div class="muted small">
+          Dica: <kbd>ESC</kbd> fecha • “Saída rápida” abre um site neutro.
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay__backdrop" id="contactBackdrop"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

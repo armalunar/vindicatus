@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin — Vindicatus</title>
+  <link rel="stylesheet" href="css/admin.css"/>
+</head>
+<body>
+  <main class="box">
+    <h1>Admin</h1>
+    <p class="muted">Acesso restrito.</p>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input id="email" type="email" autocomplete="username" required placeholder="seuemail@..." />
+
+      <label>Senha</label>
+      <input id="password" type="password" autocomplete="current-password" required />
+
+      <button type="submit">Entrar</button>
+      <div class="err" id="err"></div>
+    </form>
+  </main>
+
+  <script type="module">
+    import { auth } from "../js/firebase-client.js";
+    import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+
+    const form = document.getElementById("loginForm");
+    const err = document.getElementById("err");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.textContent = "";
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        const token = await userCredential.user.getIdToken();
+        
+        // Sincronizar sessão com o servidor
+        const res = await fetch("/api/admin/login-firebase", {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          }
+        });
+
+        if (res.ok) {
+          location.href = "/admin/panel.html";
+        } else {
+          err.textContent = "Erro ao sincronizar sessão.";
+        }
+      } catch (e) {
+        console.error(e);
+        err.textContent = "Credenciais inválidas ou erro no Firebase.";
+      }
+    });
+  </script>
+</body>
+</html>
